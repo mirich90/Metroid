@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/UI/HPMeter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/UI/MissilesUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/UI/PauseMenu.tscn" type="PackedScene" id=3]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="HPMeter" parent="." instance=ExtResource( 1 )]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 25.0
+margin_bottom = 16.0
+
+[node name="MissilesUI" parent="." instance=ExtResource( 2 )]
+visible = false
+margin_left = 4.0
+margin_top = 19.0
+margin_right = 17.0
+margin_bottom = 29.0
+
+[node name="PauseMenu" parent="." instance=ExtResource( 3 )]
+visible = false

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/maps/World.gd" type="Script" id=1]
+[ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/global/Camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/UI/UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://maps/Map001.tscn" type="PackedScene" id=5]
+
+[node name="World" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+editor/display_folded = true
+position = Vector2( 32, 112 )
+
+[node name="CameraFollow" parent="Player" index="4"]
+remote_path = NodePath("../../Camera")
+
+[node name="Camera" parent="." instance=ExtResource( 3 )]
+position = Vector2( 32, 104 )
+
+[node name="UI" parent="." instance=ExtResource( 4 )]
+
+[node name="Map001" parent="." instance=ExtResource( 5 )]
+script = null
+
+[editable path="Player"]
