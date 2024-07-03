@@ -1,0 +1,6 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "blue"
+length = 6.0
+loop = true
