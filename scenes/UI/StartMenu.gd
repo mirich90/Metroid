@@ -5,7 +5,8 @@ func _ready():
 
 func _on_StartButton_pressed():
 	SoundFX.play("Click", 1, -10)
-	get_tree().change_scene("res://maps/World.tscn")
+	get_tree().change_scene("res://maps/Forest+cat.tscn")
+	#get_tree().change_scene("res://maps/World.tscn")
 
 func _on_LoadButton_pressed():
 	SoundFX.play("Click", 1, -10)
